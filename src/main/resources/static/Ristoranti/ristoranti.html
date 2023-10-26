@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Ristoranti</title>
+  <script type = "text/javascript" src = "../js/validate.js"></script>
 </head>
     <table border ="3">
       <tr>
@@ -43,13 +44,14 @@
         <br>
         <label for="ubc">Ubicazione:</label>
         <select id="ubc" name ="ubicazione_ristorante">
-          <option value ="1">Macchia</option>
-          <option value ="2">Cosenza</option>
-          <option selected value ="3">Catanzaro</option>
-          <option value = "4">Lecce</option>
+          <option value ="Cosenza">Cosenza</option>
+          <option value ="Catanzaro">Catanzaro</option>
+          <option selected value ="Macchia">Macchia</option>
+          <option value = "Lecce">Lecce</option>
 
         </select>
         <br>
+        <input type="button" value = "Verifica Dati" onclick="verificaRistorante();"/>
         <input type="Submit"/>
         <input type="Reset"/>
 
