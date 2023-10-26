@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ristoranti</title>
+</head>
+    <table border ="3">
+      <tr>
+        <th>Nome</th>
+        <th>Descrizione</th>
+        <th>Ubicazione</th>
+      </tr>
+      <tr>
+        <td>Ristorante/Pizzeria le Casette di Zio Santino</td>
+        <td>In questo ristorante si cucina un po' di tutto e offre anche varietà di pizza</td>
+        <td>Cosenza</td>
+      </tr>
+      <tr>
+        <td>Osteria dei Fernandez</td>
+        <td>Cucina tipica a base di tartufo. Possibilità di mangiarea a sbafo</td>
+        <td>Lecce</td>
+      </tr>
+      <tr>
+        <td>Pizzeria Da Mario</td>
+        <td>Pizza napoletana vera tanto basilico</td>
+        <td>Macchia</td>
+      </tr>
+      <tr>
+        <td>Ristorate SanChaoLing</td>
+        <td>Sushi di ottima qualità</td>
+        <td>Catanzaro</td>
+      </tr>
+    </table>
+
+    <div>
+      <h3>Aggiungi un nuovo ristorante</h3>
+      <form method = "post" action="addRistorante">
+        <label for="nome_rist">Nome ristorante:</label>
+        <input id="nome_rist" type="text" name="nome_ristorante"/>
+        <br>
+        <label for="descr_rist">Descrizione:</label>
+        <input id="descr_rist" type="text" name="desc_ristorante"/>
+        <br>
+        <label for="ubc">Ubicazione:</label>
+        <select id="ubc" name ="ubicazione_ristorante">
+          <option value ="1">Macchia</option>
+          <option value ="2">Cosenza</option>
+          <option selected value ="3">Catanzaro</option>
+          <option value = "4">Lecce</option>
+
+        </select>
+        <br>
+        <input type="Submit"/>
+        <input type="Reset"/>
+
+      </form>
+    </div>
+<body>
+
+</body>
+</html>

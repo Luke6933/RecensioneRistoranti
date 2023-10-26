@@ -1,0 +1,90 @@
+body {
+    background: grey;
+}
+
+h1{
+    text-shadow: 2px 2px red;
+}
+
+nav li{
+    display: inline;
+    padding: 10px;
+}
+
+/*Colore delle parole cliccabili
+    e toglie la sottolineatura
+    */
+
+article{
+    width: 50%;
+    float: left;
+    overflow: hidden;
+}
+
+nav li>a:link,nav li>a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/*Colore se ci passo sopra*/
+nav li:hover{
+    background-color: green;
+
+}
+
+header{
+    text-align: center;
+
+}
+
+section{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+    clear: left;
+}
+
+/*Per applicare solo su un'immagine
+#logo{
+    border-style: solid;
+    border-radius: 70%;
+
+}*/
+/*Sempre per applicare ad una sola immagina ma riferito alla class
+.round{
+    border-style: solid;
+    border-radius: 70%;
+}*/
+/*Si riferisce ad un figlio di header diretto
+  senza maggiore prende tutte le immagini nell'header
+header>img{
+    border-style: solid;
+    border-radius: 70%;
+}*/
+/* Tramite un div
+#undiv>img{
+    border-style: solid;
+    border-radius: 70%;
+}*/
+
+img{
+    border-style: solid;
+    border-radius: 70%;
+}
+
+@media screen and (max-width: 800px){
+    article{
+        background-color: blue;
+    }
+    nav li{
+        display: block;
+    }
+    article{
+        width: 100%;
+        float: none ;
+    }
+}
